@@ -1,0 +1,66 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ff4d00; /* Cambia el color del borde */
+    border-radius: 8px;
+    background-color: #cfcdcd; /* Fondo blanco para el contenedor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  h2 {
+    color: #4a3d8b; /* Color verde para el encabezado */
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #232121; /* Color oscuro para las etiquetas */
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    border: 1px solid #a8a6a6;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #2b3c60; /* Color de fondo verde para los botones */
+    color: white; /* Texto blanco */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #172237; /* Color verde más oscuro al pasar el mouse */
+  }
+
+  footer {
+    background-color: #ff4d00; /* Fondo verde */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 15px 0; /* Espaciado interno vertical */
+    position: relative; /* Asegúrate de que se posicione correctamente */
+    bottom: 0; /* Mantener en la parte inferior */
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil arriba */
+  }
+  
+  footer p {
+    margin: 0; /* Eliminar márgenes del párrafo */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: white;
+  }

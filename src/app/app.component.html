@@ -227,6 +227,26 @@
       </svg>
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <br><br>
+      <div class="container">
+        <h2>Gestión de obras viales</h2>
+        <form (ngSubmit)="calcularReparticion()">
+          <div>
+            <label for="montoInversion">Monto de Inversión (en nuevos soles): </label>
+            <input type="number" id="montoInversion" [(ngModel)]="montoInversion" name="montoInversion" required>
+          </div>
+          <button type="submit">Calcular Distribución</button>
+        </form>
+      
+        <div *ngIf="montoInversion !== null">
+          <h2>Distribución de la Inversión:</h2>
+          <p><strong>La Mar:</strong> {{ laMar.toFixed(2) }} nuevos soles</p>
+          <p><strong>Avenida Abancay:</strong> {{ abancay.toFixed(2) }} nuevos soles</p>
+          <p><strong>Avenida 28 de Julio:</strong> {{ julio.toFixed(2) }} nuevos soles</p>
+          <p><strong>Avenida Aviación:</strong> {{ aviacion.toFixed(2) }} nuevos soles</p>
+          <p><strong>Avenida Tacna:</strong> {{ tacna.toFixed(2) }} nuevos soles</p>
+        </div>
+      </div>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
@@ -323,7 +343,9 @@
     </div>
   </div>
 </main>
-
+<footer>
+  <p>Diseñado por Pablo Boza</p>
+</footer>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
